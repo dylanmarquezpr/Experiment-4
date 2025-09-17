@@ -90,7 +90,7 @@ This DataFrame highlights female examinees from Mindanao whose computed average 
 
 ### Procedure:
 
-(a) Track vs Average
+### (a) Track vs Average
 
 ```python
 plt.figure(figsize=(10,6))
@@ -104,7 +104,7 @@ plt.bar(boards['Track'], boards['Average'], color="green")
 
 The command plt.figure(figsize=(10,6)) specifies the overall size of the graph to make it more readable. The line plt.bar(boards['Track'], boards['Average']) plots a bar graph with academic tracks on the x-axis and average scores on the y-axis. This provides a clear view of how performance varies between different academic tracks and allows direct comparison across categories.
 
-(b) Gender vs Average
+### (b) Gender vs Average
 
 ```python
 plt.figure(figsize=(10,6))
@@ -119,7 +119,7 @@ plt.bar(boards['Gender'], boards['Average'], color="pink")
 This bar chart displays the distribution of average scores based on gender. The code structure is the same as in the first example, where the figure size is set and a bar chart is generated, but here the x-axis represents gender categories instead of tracks.
 
 
-(c) Hometown vs Average
+### (c) Hometown vs Average
 
 ```python
 plt.figure(figsize=(10,6))
@@ -148,5 +148,3 @@ This experiment demonstrated how Pandas and Matplotlib can be applied to effecti
 
 
 
-
-.
