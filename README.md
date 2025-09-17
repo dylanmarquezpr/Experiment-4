@@ -103,6 +103,7 @@ plt.bar(boards['Track'], boards['Average'], color="green")
 
 
 The command plt.figure(figsize=(10,6)) specifies the overall size of the graph to make it more readable. The line plt.bar(boards['Track'], boards['Average']) plots a bar graph with academic tracks on the x-axis and average scores on the y-axis. This provides a clear view of how performance varies between different academic tracks and allows direct comparison across categories.
+
 (b) Gender vs Average
 
 ```python
