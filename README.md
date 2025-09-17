@@ -55,7 +55,7 @@ Instru
 <img width="218" height="127" alt="Screenshot 2025-09-18 004837" src="https://github.com/user-attachments/assets/dc0ec6e1-2ec2-46b0-aef7-7137c0243ae5" />
 
 
-This DataFrame shows examinees from Luzon under the Instrumentation track who scored higher than 70 in Electronics.
+This DataFrame filters out examinees who are enrolled in the Instrumentation track, come from Luzon, and have an Electronics score greater than 70. Only the columns for Name, GEAS, and Electronics are displayed to focus on their relevant academic performance.
 
 
 ## (b) Mindy DataFrame
@@ -80,8 +80,7 @@ Mindy
 
 <img width="338" height="171" alt="Screenshot 2025-09-18 004858" src="https://github.com/user-attachments/assets/351449c6-2324-4448-8a44-347dbca291f0" />
 
-This DataFrame highlights female examinees from Mindanao with an average score ≥ 55.
-
+This DataFrame highlights female examinees from Mindanao whose computed average score is at least 55. The table focuses on their Name, Track, Electronics grade, and calculated Average to provide a concise summary of qualified candidates based on the given conditions.
 
 
 ## 2. PROBLEM 2
@@ -103,8 +102,7 @@ plt.bar(boards['Track'], boards['Average'], color="green")
 <img width="849" height="520" alt="Screenshot 2025-09-18 004940" src="https://github.com/user-attachments/assets/02727668-12f1-4a65-b004-d75254831cc0" />
 
 
-This bar chart shows the average scores by track. Using green bars makes categories easier to distinguish. This helps identify whether students from Instrumentation, Communication, or other tracks generally perform better.
-
+The command plt.figure(figsize=(10,6)) specifies the overall size of the graph to make it more readable. The line plt.bar(boards['Track'], boards['Average']) plots a bar graph with academic tracks on the x-axis and average scores on the y-axis. This provides a clear view of how performance varies between different academic tracks and allows direct comparison across categories.
 (b) Gender vs Average
 
 ```python
@@ -117,7 +115,8 @@ plt.bar(boards['Gender'], boards['Average'], color="pink")
 <img width="873" height="515" alt="image" src="https://github.com/user-attachments/assets/9c425396-0c16-439b-a8d9-bee14894b4c3" />
 
 
-This chart compares the average scores of male vs. female students. By assigning pink to the bars, gender differences in performance can be observed more clearly.
+This bar chart displays the distribution of average scores based on gender. The code structure is the same as in the first example, where the figure size is set and a bar chart is generated, but here the x-axis represents gender categories instead of tracks.
+
 
 (c) Hometown vs Average
 
@@ -131,11 +130,11 @@ plt.bar(boards['Hometown'], boards['Average'], color="yellow")
 <img width="834" height="500" alt="Screenshot 2025-09-18 005051" src="https://github.com/user-attachments/assets/439cecbb-91fe-4a8e-970b-bcfac76d19ec" />
 
 
-This visualization compares average scores across Luzon, Visayas, and Mindanao. The yellow bars make the categories distinct, and the chart helps analyze whether location has an effect on performance.
+The code begins with plt.figure(figsize=(10,6)) to set the size of the figure, for the plot to become clear. The plt.bar(boards['Hometown'], boards['Average']) command generates a bar chart, where the x-axis represents different hometowns and the y-axis represents the corresponding average scores. This visualization compares average scores across Luzon, Visayas, and Mindanao.
 
 ### CONCLUSION
 
-This experiment demonstrated how Pandas and Matplotlib can be applied to effectively analyze and present data. Pandas was used to filter the dataset and compute averages, allowing specific groups such as examinees by track, gender, and hometown to be identified. Matplotlib provided a visual representation of the results through bar graphs, making it easier to compare categories and observe performance trends. The use of different colors improved clarity and distinction between groups, while the graphs complemented the numerical results by highlighting patterns that are less noticeable in raw data. Overall, the experiment showed the importance of combining data manipulation with visualization in order to extract meaningful insights and present findings in a clear and organized manner.
+This experiment demonstrated how Pandas and Matplotlib can be applied to effectively analyze and present data. Pandas was used to filter the dataset and compute averages, allowing specific groups such as examinees by track, gender, and hometown to be identified. Matplotlib provided a visual representation of the results through bar graphs, making it easier to compare categories and observe performance trends. The graphs complemented the numerical results by showing patterns that are less noticeable in raw data. The experiment showed the proper utilization of combining data manipulation with visualization in order to extract present findings in a clear and organized manner.
 
 
 
